@@ -1,0 +1,12 @@
+<h1>Restaurants<h2>
+
+<%# <%= link_to "Wikinimous", articles_path %>
+<%# <%= link_to "New Article", new_article_path %>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <p><%= restaurant.phone_number %></p>
+  </li>
+  <% end %>
+</ul>
